@@ -30,7 +30,14 @@ Multiple models were evaluated — **Ridge Regression**, **Random Forest Regress
 
 ## 🧩⚙️ The Approach
 
-### 1. Multicollinearity Handling: Successive VIF Testing
+### 1. Data Loading and Cleaning
+
+- The dataset was loaded using `pandas`.
+- Null values were checked using `.isnull().sum()` and handled appropriately (e.g., imputation or removal).
+- Data types were verified and converted if necessary (e.g., converting categorical variables to numeric).
+- Outliers were identified and treated using statistical methods like IQR or domain knowledge.
+- 
+### 2. Multicollinearity Handling: Successive VIF Testing
 - A **Variance Inflation Factor (VIF)** test was performed to detect multicollinearity.
 - Features with a VIF value greater than **10** were removed iteratively.
 - After dropping the feature with high VIF (`credit_score`), a second VIF test confirmed all remaining features were within acceptable limits.
@@ -52,7 +59,7 @@ All features passed the VIF threshold (<10), indicating low multicollinearity.
 
 ---
 
-### 2. Model Training & Selection
+### 3. Model Training & Selection
 
 Three regression models were trained and tuned:
 
@@ -70,7 +77,7 @@ Three regression models were trained and tuned:
 
 ---
 
-### 3. Evaluation Metrics
+### 4. Evaluation Metrics
 
 Each model was evaluated using:
 - **Mean Squared Error (MSE)**
