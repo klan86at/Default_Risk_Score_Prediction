@@ -1,7 +1,7 @@
-# 📊 Credit Risk Score Prediction Project
+# 🧩 Credit Risk Score Prediction Project
 
 ## 🔍 Overview
-This project aims to predict credit risk scores based on various financial and demographic features. The goal is to build a robust regression model that accurately estimates the creditworthiness of individuals, helping lenders make informed decisions.
+This project aims to predict default risk scores based on various financial and demographic features. The goal is to build a robust regression model that accurately estimates the creditworthiness of individuals, helping lenders make informed decisions.
 
 ---
 The workflow includes:
@@ -35,8 +35,8 @@ Multiple models were evaluated — **Ridge Regression**, **Random Forest Regress
 - The dataset was loaded using `pandas`.
 - Null values were checked using `.isnull().sum()` and handled appropriately (e.g., imputation or removal).
 - Data types were verified and converted if necessary (e.g., converting categorical variables to numeric).
-- Outliers were identified and treated using statistical methods like IQR or domain knowledge.
-- 
+- Data parsing for modeling(Regression analysis)
+  
 ### 2. Multicollinearity Handling: Successive VIF Testing
 - A **Variance Inflation Factor (VIF)** test was performed to detect multicollinearity.
 - Features with a VIF value greater than **10** were removed iteratively.
