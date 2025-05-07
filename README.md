@@ -3,8 +3,14 @@
 ## 🔍 Overview
 This project aims to predict credit risk scores based on various financial and demographic features. The goal is to build a robust regression model that accurately estimates the creditworthiness of individuals, helping lenders make informed decisions.
 
-Multicollinearity among features was addressed using the **Variance Inflation Factor (VIF)** test. Multiple regression models were evaluated — **Ridge Regression**, **Random Forest Regressor**, and **Gradient Boosting Regressor** — with hyperparameter tuning via `GridSearchCV`. The best-performing model was selected based on evaluation metrics such as **MSE**, **RMSE**, and **R² score**.
+---
+The workflow includes:
+- **Data loading and cleaning**
+- **Multicollinearity detection using VIF**
+- **Model training and hyperparameter tuning**
+- **Model evaluation using MSE, RMSE, and R² score**
 
+Multiple models were evaluated — **Ridge Regression**, **Random Forest Regressor**, and **Gradient Boosting Regressor** — using `GridSearchCV` for optimal performance.
 ---
 
 ## 🗒️📌 Key Features Used
